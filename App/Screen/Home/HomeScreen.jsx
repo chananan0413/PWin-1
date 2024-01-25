@@ -6,7 +6,8 @@ import Header from "./Header";
 import SearchBar from "./SearchBar";
 import NearButton from "./NearButton";
 import CalculateButton from "../Calculate/CalculateButton";
-import AddPlaceButton from "../AddPlaces/AddPlaceButton";
+import AddPlaceButton_notLoggedIn from "../AddPlaces/AddPlaceButton_notLoggedIn";
+import AddPlaceButton_LoggedIn from "../AddPlaces/AddPlaceButton_LoggedIn";
 
 export default function HomeScreen() {
   return (
@@ -17,7 +18,8 @@ export default function HomeScreen() {
         <SearchBar />
         <View style={styles.rightButton}>
           <CalculateButton onPress={() => console.log(">>กดปุ่ม คำนวณ<<")} />
-          <AddPlaceButton onPress={() => console.log(">>กดปุ่ม เพิ่ม<<")} />
+          <AddPlaceButton_notLoggedIn onPress={() => console.log(">>กดปุ่ม ล็อกอินหากยังไม่เคย<<")} />
+          <AddPlaceButton_LoggedIn onPress={() => console.log(">>กดปุ่ม เพิ่ม<<")} />
         </View>
         <View style={styles.buttomContainer}>
           <NearButton onPress={() => console.log(">>กดปุ่ม ใกล้สุด<<")} />

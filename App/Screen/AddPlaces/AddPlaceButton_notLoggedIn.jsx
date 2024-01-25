@@ -1,44 +1,45 @@
-import { Image, TouchableOpacity, StyleSheet } from "react-native";
-import React from 'react';
+import { TouchableOpacity,Image, StyleSheet } from "react-native";
+import React from 'react'
 import { useNavigation } from "@react-navigation/native";
 
-const CalculateButton = () => {
+const AddPlaceButton = () => {
   const navigation = useNavigation();
 
   const handlePress = () => {
     // Navigate to CalculateScreen when the button is pressed
-    //navigation.navigate("CalculateScreen");
-    navigation.navigate("CalculateScreen");
+    navigation.navigate("LogInScreen");
   };
 
   return (
     <TouchableOpacity style={styles.container} onPress={handlePress}>
       <Image
-        source={require('./../../../assets/images/Price.png')}
+        source={require('./../../../assets/images/Win-Mark.png')} // Update with the actual path to your image
         style={styles.image}
       />
+
     </TouchableOpacity>
   );
 };
-
 const styles = StyleSheet.create({
   container: {
     flexDirection: "column",
     backgroundColor: "#FF9A62",
+    padding: 10,
     borderRadius: 10,
     alignItems: "center",
     width: 50,
     height: 50,
-    marginVertical: 5,
+    marginVertical:5,
   },
+
   image: {
-    justifyContent: 'center',
-    width: 40,
-    height: 40,
+    justifyContent:'center',
+    width: 35,
+    height: 35,
+    //resizeMode: 'contain', 
     alignItems: "center",
-    alignSelf: 'center',
-    marginVertical: 5,
+    alignSelf:'center',
   },
 });
 
-export default CalculateButton;
+export default AddPlaceButton;

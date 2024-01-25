@@ -1,8 +1,9 @@
 import { View, Text, Image, StyleSheet } from "react-native";
 import React from "react";
-import LogIn  from "./LogIn";
+import SignUp from "./SignUp";
+import { TextInput } from "react-native-gesture-handler";
 //import 'Logo' from '../PWin-App/assets/images/Logo.jpg';
-export default function LogInScreen() {
+export default function SignUpScreen() {
   return (
 /*     <View
       style={{
@@ -19,7 +20,7 @@ export default function LogInScreen() {
 
     </View> */
     <View style={styles.container}>
-      <LogIn/>
+      <SignUp/>
     </View>
 
   );
