@@ -1,5 +1,6 @@
 import { View, Text, Image, StyleSheet } from 'react-native'
 import React, { useState } from 'react'
+import Icon from 'react-native-vector-icons/Ionicons';
 
 export default function Header() {
     const {user} = useState();
@@ -9,6 +10,8 @@ export default function Header() {
       <Image source={require('./../../../assets/images/Logo.png')}
       style={{ width:150, height:35, objectFit: 'contain'}}/>
     </View>
+
+
   )
 }
 const styles = StyleSheet.create({

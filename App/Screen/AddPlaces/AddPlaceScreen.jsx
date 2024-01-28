@@ -17,6 +17,7 @@ export default function AddPlaceScreen() {
         <View style={styles.head}>
           <Text style={styles.title}>เพิ่มสถานที่ตั้ง</Text>
         </View>
+        
         <View style={styles.headerContainer}>
         <View style={styles.buttomContainer}>
           <AddButton onPress={() => console.log(">>กดปุ่ม ยืนยันสถานที่<<")} />
